@@ -1,0 +1,17 @@
+# 运行时缓存
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 对局/训练日志
+*.log
+
+# 自玩数据（数 GB，不入库）
+guided_rollouts*.jsonl
+rollouts_*.npz
+
+# 模型：仅保留最新 checkpoint
+models/*.pt
+models/*.zip
+models/*.json
+!models/tavern_ppo_final.pt
